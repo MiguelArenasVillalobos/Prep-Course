@@ -1,5 +1,18 @@
+body {
+  background: url("../img/background.jpg") center center no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 h1 {
   color: rgb(57, 94, 216);
+}
+
+h1,h2,h3,h4,div {
+  text-align: center;
 }
 
 img {
