@@ -202,7 +202,6 @@ function doWhile(numero) {
   do {
     result = result+INCREMENT;
     
-    
     if(cicles >= MAX_CICLES) return;
     cicles++;
   } while(cicles < MAX_CICLES);
