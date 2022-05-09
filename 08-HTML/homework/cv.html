@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Arenas Villalobos - Curriculum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.2.2/photoswipe.css">
+  <link rel="stylesheet" href="css/curriculum.css">
+</head>
+<body>
+
+
+  <div class="container">
+    <main class="main">
+      <h1 class="title">Miguel Arenas Villalobos - Curriculum Vitae</h1>
+  
+      <section class="section">
+        <h2 class="title">Skills:</h2>
+  
+        <div class="skills">
+          <div class="skill">
+            <p class="title">HTML</p>
+            <span class="percentage">20%</span>
+          </div>
+          <div class="skill">
+            <p class="title">CSS</p>
+            <span class="percentage">20%</span>
+          </div>
+          <div class="skill">
+            <p class="title">JS</p>
+            <span class="percentage">15%</span>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section">
+        <h2>Educación:</h2>
+        <div class="educacion">
+          <div class="certificados pswp-gallery pswp-gallery--single-column" id="gallery-certs">
+            <a href="img/certificados/full/diploma-adobe-xd-2017-1.png"
+              data-pswp-width="2200" 
+              data-pswp-height="1700" 
+              target="_blank">
+                <img src="img/certificados/500/diploma-adobe-xd-2017-1-500px.png" alt="" />
+            </a>
+            <a href="img/certificados/full/diploma-prototipado-1.png"
+              data-pswp-width="2200" 
+              data-pswp-height="1700" 
+              target="_blank">
+                <img src="img/certificados/500/diploma-prototipado-1-500px.png" alt="" />
+            </a>
+            <a href="img/certificados/full/diploma-programacion-basica-1.png"
+              data-pswp-width="2200" 
+              data-pswp-height="1700" 
+              target="_blank">
+                <img src="img/certificados/500/diploma-programacion-basica-1-500px.png" alt="" />
+            </a>
+            <a href="img/certificados/full/diploma-prework-2019-1.png"
+              data-pswp-width="2200" 
+              data-pswp-height="1700" 
+              target="_blank">
+                <img src="img/certificados/500/diploma-prework-2019-1-500px.png" alt="" />
+            </a>
+            <a href="img/certificados/full/diploma-terminal-2018-1.png"
+              data-pswp-width="2200" 
+              data-pswp-height="1700" 
+              target="_blank">
+                <img src="img/certificados/500/diploma-terminal-2018-1-500px.png" alt="" />
+            </a>
+            <a href="img/certificados/full/diploma-fundamentos-javascript-2018-1.png"
+              data-pswp-width="2200" 
+              data-pswp-height="1700" 
+              target="_blank">
+                <img src="img/certificados/500/diploma-fundamentos-javascript-2018-1-500px.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <aside class="aside">
+      <div class="section datos">
+        <div class="foto">
+          <img src="img/foto-perfil.jpg" alt="">
+        </div>
+        <h3>Miguel Arenas Villalobos</h3>
+        <span class="line-separator"></span>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod id labore doloribus. Voluptates sit porro distinctio quae expedita molestias optio.</p>
+      </div>
+  
+      <div class="section hobbies">
+        <h4 class="title">Hobbies:</h4>
+        <ul>
+          <li>Jugar Videojuegos</li>
+          <li>Escuchar música</li>
+          <li>Aprender en linea</li>
+        </ul>
+      </div>
+  
+      <div class="experience">
+        <h4 class="title">Experiencias laborales:</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi harum necessitatibus qui doloribus dolorum voluptatum dicta quidem quibusdam dolore facere?</p>
+      </div>
+    </aside>
+
+  </div> <!-- .container-->
+
+
+  
+  <script type="module">
+
+    // Include Lightbox 
+    import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.2.2/photoswipe-lightbox.esm.js';
+
+    const lightbox = new PhotoSwipeLightbox({
+      // may select multiple "galleries"
+      gallery: '#gallery-certs',
+
+      // Elements within gallery (slides)
+      children: 'a',
+
+      // setup PhotoSwipe Core dynamic import
+      pswpModule: () => import('https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.2.2/photoswipe.esm.js')
+    });
+    lightbox.init();
+  </script>
+
+</body>
+</html>

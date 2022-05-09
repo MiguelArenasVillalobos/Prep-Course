@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --bgcolor: #333333;
+  --textColor: #F3F3F3;
+  --primaryColor: #21508E;
+  --secondaryColor: #A0B3F1;
+}
+
+body {
+  background-color: var(--bgcolor);
+  color: var(--textColor);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Open Sans' sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2,h3,h4 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  margin-bottom: 75px;
+  max-width: 950px;
+  margin-top: 40px;
+}
+
+/** Main **/
+@media (min-width: 900px) {
+  .main {
+    width: 66%;
+    margin-right: 4%;
+  }
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 600px;
+  text-align: center;
+}
+
+.skills .skill {
+  padding: 10px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Educación */
+.certificados {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .certificados {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .certificados a {
+    flex: 250px;
+  } 
+}
+
+.certificados img {
+  width: 100%;
+  height: auto;
+}
+
+.certificados a {
+  display: inline;
+  margin: 8px 8px 0 0;
+}
+
+/** Aside **/
+@media (min-width: 900px) {
+  .aside {
+    width: 26%;
+  }
+}
+.datos {
+  margin-top: 0;
+  text-align: center;
+  width: 100%;
+}
+.datos h3 {
+  font-weight: normal;
+}
+.datos .foto  {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.datos .foto img {
+  display: inline;
+  margin: 0 auto;
+  height: 140%;
+  width: auto;
+  position: relative;
+  right: 75px;
+}
+.hobbies ul {
+  line-height: 28px;
+}
